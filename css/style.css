@@ -1,0 +1,24 @@
+body {
+  margin: 50px;
+  text-align: center;
+}
+#shadow {
+  position: relative;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  perspective: 50px;
+  perspective-origin: bottom left;
+  display: inline-block;
+}
+#shadow::after {
+  content: 'Shadow';
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 15px;
+  left: 0;
+  transform: scaleY(0.7) skewX(45deg);
+  transform-origin: bottom left;
+  opacity: .3;
+}
